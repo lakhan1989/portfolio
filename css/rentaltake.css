@@ -1,0 +1,172 @@
+:root{
+    --primary-color:#FC5185;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+body{
+    font-family: Poppins-Regular;
+    background-color: #F5F5F5;
+   
+}
+.main{
+    color:white;
+}
+.navbar{
+    text-transform: uppercase;
+    position: fixed;
+    width:100%;
+    top: -1px;
+    z-index: 10;
+
+}
+.navbar-nav{
+    margin-left: auto;
+    align-items: center;
+    column-gap: 2rem;
+}
+.navbar.bg-light{
+    padding:.5%;
+    box-shadow: 10px 10px 20px 10px rgba(46, 46, 46, 0.2);
+}
+.top-section{
+    padding:5% 5%;
+}
+.navbar-light .navbar-brand{
+    font-size: 2rem;
+}
+
+#navbarSupportedContent > ul > hr{
+    height:2rem;
+    border: 1px solid var(--primary-color);
+    width:2px;
+    opacity: 1;
+}
+#navbarSupportedContent > ul > li:nth-child(2) > button > a{
+    color:white;
+    font-weight: 500;
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+}
+#navbarSupportedContent > ul > li> a{
+    color:black;
+    font-weight: 500;
+}
+#navbarSupportedContent > ul > li:hover > a{
+    color:var(--primary-color);
+}
+
+.top-section-image img{
+    height:80vh;
+    width:100vw;
+    object-fit: cover;
+}
+.image-container{
+    position: relative;
+}
+.image-container .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fc518444;
+}
+.overlay-text{
+    margin: 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+h1{
+    font-size:4rem;
+    font-weight: bold;   
+}
+
+h2{
+    font-size:3rem;
+    font-weight: bold;
+}
+h3{
+    font-size:2.4rem;
+    font-family: Poppins-Bold;
+}
+
+.profile-img img{
+    width:100%;
+    margin: auto;
+    transition: 0.2s;
+    border-radius:20px;
+}
+
+.profile-img:hover img{
+    transform: scale(1.07);
+}
+.overlay-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:white;
+    margin: auto;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fc5184;
+}
+.overlay-center h2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.image-container{
+
+      border-radius:20px;
+  }
+  .image-container img:hover{
+      transform: scale(1.07);
+  }
+.image-container img {
+    border-radius:20px;
+    transition: .3s;
+}
+.fa-check-circle{
+    font-size:3.4rem;
+    color: var(--primary-color)
+}
+.check-section{
+    line-height:1.5;
+    display: grid;
+    justify-items: center;
+    row-gap:20px;
+    padding:0rem 3rem;
+}
+.check-section-round img{
+    width:100%;
+    border-radius:50%;
+    object-fit: cover;
+}
+.check-section-round{
+    transition: .4s;
+}
+.check-section-round:hover{
+    padding-top:1rem !important;
+}
+.btn-send{
+    margin-right:auto;
+}
