@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="./css/rentaltake.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+  
+        $(".sliding-link").click(function(e) {
+        e.preventDefault();
+        var aid = $(this).attr("href");
+        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    });
+    
+    </script>
   </head>
   <body>
     <div class="main">
@@ -35,22 +45,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item sliding-link">
+                <a href="#work" class="nav-link">Work</a>
+              </li>
+              <li class="nav-item sliding-link">
+                <a href="#about" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Work</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Contact Me</a>
+                <a href="#contact" class="nav-link">Contact Me</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="image-container">
+      <div class="image-container" id="home">
         <div class="top-section-image">
           <img
             src="./static/marek-levak-Rz3CmJpcLew-unsplash.jpg"
@@ -69,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="about">
       <h3>Wanna Know Me?</h3>
       <div class="row mt-5">
         <div class="col-lg-4 profile-img">
@@ -101,7 +111,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="first" >
       <h3>Achivements</h3>
       <div class="row">
         <div class="col-lg-6 py-5">
@@ -125,9 +135,10 @@
       </div>
     </div>
 
-    <div class="container mt-5">
-      <h3>Take A Look at My Work</h3>
+    <div class="container mt-5" id="work">
+      
       <div class="row">
+        <h3>Take A Look at My Work</h3>
         <div class="col-lg-6 py-4">
           <div class="image-container">
             <img
@@ -264,29 +275,16 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid p-5 bg-white">
+    <div class="container-fluid p-2 pb-5 bg-white" id="contact">
       <div class="row p-5">
-      <div class="col-lg-5">
+      <div class="col-lg-12 d-grid justify-content-center text-align-center">
         <h2>Have some work for me in mind?</h2>
         <h5>Just Contact Me.</h5>
         <br>
         <p><i class="fa fa-phone-alt"></i> +918114460310</p> 
         <p> <i class="fa fa-envelope"></i> luckchhipa1989@gmail.com</p> 
       </div>
-      <div class="col-lg-7 pt-3">
-        <form action="mailto:luckchhipa1989@gmail.com" method="GET">
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" name="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <br>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea name="email" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        <button type="submit" class="btn btn-primary w-25 mt-3 btn-send">Send</button>
-      </form>
-      </div>
+     
       </div>
 
     </div>
