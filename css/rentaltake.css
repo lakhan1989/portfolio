@@ -170,3 +170,7 @@ h3{
 .btn-send{
     margin-right:auto;
 }
+
+.col-lg-6 .text-muted{
+    line-height: 2;
+}
